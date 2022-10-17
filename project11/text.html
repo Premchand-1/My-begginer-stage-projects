@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>javaScript_lerning</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      button {
+        background-color: springgreen;
+        border: none;
+        border-radius: 1em;
+        font-weight: 900;
+        box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
+      }
+      button:active {
+        margin-top: 2px;
+        margin-right: 2px;
+        box-shadow: none;
+      }
+      input {
+        border: 2px solid springgreen;
+        border-radius: 4px;
+        box-shadow: -3px 3px 4px rgba(0, 225, 127, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <input id="todo-title" type="text" />
+    <input id="date-picker" type="date" />
+    <button onclick="addTodo()">Add Todo😍</button>
+
+    <div id="todo-list"></div>
+
+    <script>
+      //**** Model Section **** //
+
+      let todos;
+      const savedTodos = JSON.parse(localStorage.getItem("todos"));
+
+      if (Array.isArray(savedTodos)) {
+        todos = savedTodos;
+      } else {
+        todos = [
+          {
+            text: "Get groceries",
+            dueDate: "03/03/2022",
+            id: "id1",
+          },
+          {
+            text: "Wash car",
+            dueDate: "09/03/2022",
+            id: "id2",
+          },
+          {
+            text: "Make dinner",
+            dueDate: "03/05/2022",
+            id: "id3",
+          },
+        ];
+      }
+      render();
+      // Creates a todo
+      function createTodo(text, dueDate) {
+        const id = "" + new Date().getTime();
+        todos.push({
+          text: text,
+          dueDate: dueDate,
+          id: id,
+        });
+        saveTodos();
+      }
+      // Delete a todo
+      function removeTodo(idToDelete) {
+        todos = todos.filter(function (prem) {
+          if (prem.id === idToDelete) {
+            return false;
+          } else {
+            return true;
+          }
+        });
+        saveTodos();
+      }
+      // saveTodos
+      function saveTodos() {
+        localStorage.setItem("todos", JSON.stringify(todos));
+      }
+      // **** Controller Section **** //
+      function addTodo() {
+        const textbox = document.getElementById("todo-title");
+        const text = textbox.value;
+        const datePicker = document.getElementById("date-picker");
+        const dueDate = datePicker.value;
+
+        createTodo(text, dueDate);
+        render();
+      }
+      function deleteItemes(event) {
+        const deleteButton = event.target;
+        const idToDelete = deleteButton.id;
+
+        removeTodo(idToDelete);
+        render();
+      }
+      //**** View Section ****//
+      function render() {
+        document.getElementById("todo-list").innerHTML = "";
+
+        todos.forEach(function (prem) {
+          const element = document.createElement("div");
+          element.innerText = prem.text + " " + prem.dueDate;
+
+          const deleteButton = document.createElement("button");
+          deleteButton.innerText = "Delete❌";
+          deleteButton.style = "margin-left: 10px";
+          deleteButton.onclick = deleteItemes;
+          deleteButton.id = prem.id;
+          element.appendChild(deleteButton);
+          const todoList = document.getElementById("todo-list");
+          todoList.appendChild(element);
+        });
+      }
+    </script>
+  </body>
+</html>

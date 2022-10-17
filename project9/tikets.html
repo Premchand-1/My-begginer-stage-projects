@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link  type="text/css" href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Tickets</title>
+  </head>
+  <body class="tickets">
+        <nav>
+          <ul>
+            <li><a href="prem.html">Home</a></li>
+            <li><a href="tikets.html">Tickets</a></li>
+          </ul>
+        </nav>
+        <header id="header" style="background: url(images/conference-hero.jpg)">
+          
+          <div>
+            <img src="images/technology-advancement.jpg" alt="herp sybole" />
+            <h1>ADVANCING TECHNOLOGY</h1>
+            <h2>1st Annual Budding Devlopers Conference</h2>
+            <small>Orlando, FL - October 11, 2022</small>
+          </div>
+        </header>
+
+        <section id="ticket-form">
+            <span>
+                <h1>Tickets</h1>
+                <form method="post">
+                  <label for="name"> Name:
+                  <input type="text" name="name" required id="name"></label>
+
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required placeholder="You@email"><br><br>
+
+                  <select>
+                    <option value="Standard - $149">Standard - $149</option>
+                    <option value="Premium - $249">Prmium - $249</option>
+                  </select>
+            </span>
+            <div>
+                   <h3>Package</h3>
+                  <label>
+                  <input type="checkbox" name="name">Add on lodging - $99</label> 
+                  <label>
+                     <br>
+                  <input type="checkbox" name="name">Add on meals - $119</label> 
+           </div>
+                  <br>
+                <input type="submit" value="submit">
+                </form>
+                <br>
+           <a href="my_prograss.html">Back to home</a><div>&copy; 2022</div>
+        </section>
+  </body>
+</html>

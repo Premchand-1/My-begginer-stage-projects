@@ -1,0 +1,118 @@
+.main{
+    font-family: red hat display;
+    justify-content: center;
+    text-align: center;
+    
+    margin: 0;
+    background-color: hsl(225, 100%, 94%);
+    padding: 0px 230px 50px 230px;
+    box-shadow: -10px 5px 10px gray;
+
+    
+}
+.flex{
+    display: flex;
+}
+.prem{
+    background-color:#ffff ;
+    width: 360px;
+    height:360px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -10px 5px 10px gray;
+
+
+}
+body{
+    font-size: 16px;
+    width: 1440px;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+.para{
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color:  hsl(224, 23%, 55%);
+    text-shadow: -10px 5px 10px gray;
+}
+
+.img1{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    box-shadow: -10px 5px 10px gray;
+    border-radius: 50px;
+}
+.inline-block{
+    display: inline-block;
+    background-color:hsl(225, 100%, 98%);
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 0px;
+    box-shadow: -10px 5px 10px gray;
+    
+}
+.anual{
+    margin-bottom: 0;
+}
+.price{
+    margin-top: 0;
+    
+    color:hsl(224, 23%, 55%);
+}
+.side{
+    display: inline-block;
+    vertical-align: middle;
+    text-shadow: -10px 5px 10px gray;
+    
+}
+a{
+    margin-left: 80px;
+    font-weight: 700;
+   color: hsl(245, 75%, 52%);
+   text-shadow: -10px 5px 10px gray;
+}
+.button{
+background-color: hsl(245, 75%, 52%);
+padding: 10px;
+width: 300px;
+margin: 40px auto;
+border-radius: 10px;
+color: #fff;
+font-weight: 700;
+margin-bottom: 0px;
+margin-top: 20px;
+box-shadow: -10px 5px 10px gray;
+
+}
+.img{
+    margin-top: 40px;
+    margin-bottom:0px;
+    width: 360px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: -10px 5px 10px gray;
+
+}
+h2{
+    display: inline-block;
+    text-shadow: -10px 5px 10px gray;
+margin-left: 10px;
+
+    
+}
+.last{
+    color:hsl(224, 23%, 55%);
+    text-shadow: -10px 5px 10px gray;
+    margin-top: 10px;
+}
+code{
+    text-shadow: -10px 5px 10px gray;
+    vertical-align: middle;
+}

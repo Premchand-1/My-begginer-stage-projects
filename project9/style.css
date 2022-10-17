@@ -1,0 +1,237 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+}
+
+.wrap {
+    max-width: 1280px;
+    padding: 50px;
+}
+.img2{
+    margin:10 auto;
+}
+section {
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    margin: 25px 0;
+}
+
+a {
+    margin: 25px 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 17px;
+    text-align: center;
+}
+h5 {
+    font-size: 10px;
+}
+
+/******* HOMEPAGE *******/
+
+/*  HEADER  */
+header {
+    text-align: center;
+    color: #ffffff;
+    
+}
+
+header img {
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 100%;
+    border:6px solid #fff;
+
+
+}
+#header {
+    background-size: cover;
+    padding: 80px 0;
+}
+.san-image{
+    width: 40%;
+    float: left;
+}
+.san-text{
+    width: 60%;
+    float: left;
+}
+.san img{
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+.san{
+    min-height: 400px;
+}
+/* EXPECTATIONS */
+section#expectations {
+    background: #BDD5EA;
+    border-bottom: 1px dashed #495867;
+}
+
+/* THREE POINTS *
+.three-points-section {
+    min-height: 400px;
+}
+
+
+.three-points-section img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.three-points-section-image {
+    width: 40%;
+    float: left;
+}
+
+.three-points-section-text {
+    width: 60%;
+    float: left;
+}
+
+/* PRICING TABLE */
+section#pricing-table {
+    background: #BDD5EA;
+    border-top: 1px dashed #495867;
+    border-bottom: 1px dashed #495867;
+
+}
+table td:hover th:hover{
+    border-collapse: collapse;
+    background-color:#495867;
+    opacity: 0.1;
+}
+td:hover{
+    background-color: #495867;
+    color: #fff;
+}
+th{
+    background-color: #495867;
+    padding: 20px;
+    color: #ffff;
+    border-bottom: 10px;
+    border: 2px solid #495867;
+
+}
+td{
+    text-align: center;
+    padding: 10px;
+    background-color: #ffff;;
+
+}
+.hover{
+    background-color: rgb(210, 81, 30);
+    border-radius: 6px;
+    border: none;
+    width: 90px;
+    height: 30px;
+    color: #fff;   
+}
+.link{
+    color: #ffff;
+    text-decoration: none;
+}
+.san1-image{
+    width: 50%;
+    float: left;
+}
+.san1-text{
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+}
+.san1 img{
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+.san1{
+    clear: both;
+    min-height: 200px;
+}
+.day-1, .day-2{
+    float: left;
+    width: 50%;
+
+}
+#center{
+    text-align: center;
+    margin-top: 25px;
+    padding-left: 450px;
+}
+.padding10{
+    padding: 25px;
+}
+/* SPEAKERS  *
+.speaker-column-1, .speaker-column-2 {
+    float: left;
+    width: 50%;
+}
+.
+.speaker-column-1 h4, .speaker-column-2 h4 {
+    text-align: center;
+}
+
+.speaker {
+    clear:both;
+    min-height: 200px;
+}
+
+.speaker-image {
+    width: 50%;
+    float:left;
+}
+
+.speaker-image img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.speaker-text {
+    width: 50%;
+    float: left;
+}
+
+/* HOME CTA */
+section#home-cta {
+    background: #BDD5EA;
+    border-top: 1px dashed #495867;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background: #495867;
+    
+}
+
+
+
+
+/******* TICKETS PAGE *******/
+.tickets h1 {
+    text-align: center;
+}
+
+#ticket-form {
+    margin: 0 auto;
+    text-align: center;
+}
